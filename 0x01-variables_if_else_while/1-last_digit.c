@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
 * main - printing the last digit of the number
 * Return: ALways (Success)
@@ -7,6 +8,7 @@
 int main(void)
 {
 int n;
+int lastd;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 lastd = n % 10;
