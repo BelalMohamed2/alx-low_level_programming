@@ -6,7 +6,7 @@
 int main(void)
 {
 int count = 97;
-for (; count != 90; count++)
+for (; count != 91; count++)
 {
 putchar(count);
 if (count == 122)
