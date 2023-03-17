@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main - paragraph for the task
+ * main - paragraph for the task
  *
- * Return (0)
+ * Return: (0)
  */
 int main(void)
 {
