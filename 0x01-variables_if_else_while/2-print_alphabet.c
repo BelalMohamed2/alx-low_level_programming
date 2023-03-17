@@ -10,5 +10,6 @@ for (; count <= 122; count++)
 {
 putchar(count);
 }
+putchar('\n');
 return (0);
 }
