@@ -3,9 +3,9 @@
  *main - paragraph for the task
  *
  * Return (0)
- * */
+ */
 
-int main (void){
-	puts("Programming is like building a multilingual puzzle");
-	reurn (0);
+int main(void){
+puts("Programming is like building a multilingual puzzle");
+reurn (0);
 }
