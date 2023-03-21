@@ -7,6 +7,7 @@
  */
 int main(void)
 {
+/* function for printing putchar char by char*/
 _putchar('_');
 _putchar('p');
 _putchar('u');
