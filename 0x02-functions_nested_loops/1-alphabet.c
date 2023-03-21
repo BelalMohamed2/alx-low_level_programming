@@ -6,6 +6,7 @@
  */
 void print_alphabet(void)
 {
+/* Description: 'function for printing the alphabets'*/
 int i = 97;
 for (; i <= 122; i++)
 {
