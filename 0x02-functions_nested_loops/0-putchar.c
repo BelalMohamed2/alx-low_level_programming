@@ -1,7 +1,7 @@
 #include "main.h"
 /*
  * main - Entry point
- * description: function for printing the word putchar
+ * Description: function for printing the word putchar
  * Return: Always(success)
  *
  */
