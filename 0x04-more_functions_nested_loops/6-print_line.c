@@ -4,7 +4,7 @@
  * @n: the input of the function
  * Return: return success
  */
-int print_line(int n)
+void print_line(int n)
 {
 	int i;
 
