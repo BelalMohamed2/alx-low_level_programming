@@ -1,20 +1,30 @@
+
 #include "main.h"
 /**
- * print_diagonal - printing spaces as diagonal shape
- * @n: the argument of the function
- * return: always success
+ * print_diagonal - draws a diagonal line on the terminal
+ *
+ * @n: number of times the \ character is printed
+ *
  */
 void print_diagonal(int n)
 {
-	int i, j;
+	int a;
+	int b;
 
-	for (i = 1; i <= n; i++)
+	if (n <= 0)
 	{
-		for (j = 1; j <= i - 1; j++)
-		{
-			_putchar(' ');
-		}
-		_putchar('\\');
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		for (a = 0; a < n; a++)
+		{
+			for (b = 0; b < a; b++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
 }
