@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * _strcat - function used to concate two strings
+ * _strncat - function used to concate two strings
  * @src: the first string
  * @dest: is the destination array pointer
+ * @n: identifies the number of character that will be concatenated
  * Return: the return is an array pointer of the concatenated string
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len = 0;
 	int i;
@@ -14,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	{
 		dest_len++;
 	}
-	for (i = 0; *(src + i) != '\0'; i++)
+	for (i = 0; *(src + i) != '\0' && i < n; i++)
 	{
 		dest[dest_len++] = src[i];
 	}
