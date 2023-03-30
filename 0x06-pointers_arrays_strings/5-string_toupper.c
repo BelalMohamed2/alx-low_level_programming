@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * string_toupper - function to transger lowercase into upper case
- * @str: input string pointer to char
- * return: array to char that points to the upperd case string
+ * string_toupper - changes all lowercase letters to uppercase
+ *
+ *@str: string to change to uppercase
+ *
+ * Return: uppercase string
  */
 char *string_toupper(char *str)
 {
