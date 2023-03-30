@@ -6,14 +6,9 @@
  */
 char *string_toupper(char *str)
 {
-	int counter = 0;
 	int i = 0;
 
-	while (str[counter])
-	{
-		counter++;
-	}
-	for (; str[i]; i++)
+	for (; str[i] != '\0'; i++)
 	{
 		if (str[i] >= 97 && str[i] <= 122)
 		{
