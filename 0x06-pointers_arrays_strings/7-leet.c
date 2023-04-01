@@ -7,7 +7,7 @@
 char *leet(char *str)
 {
 	char arr[] = "aAeEoOtTlL";
-	char code[] = "4433007711"
+	char code[] = "4433007711";
 	int i;
 	int j;
 
