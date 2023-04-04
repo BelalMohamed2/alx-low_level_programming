@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * _strspn - Returns the number of bytes in the initial segment of s
- * @accpet: a pointer to a test string
+ * @accept: a pointer to a test string
  * @s: a pointer to the main string
+ * Return: the length of file accept in the prefix in the s
  */
 unsigned int _strspn(char *s, char *accept)
 {
