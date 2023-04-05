@@ -16,13 +16,11 @@ int _sqrt_recursion(int n)
  */
 int _square_root(int n, int i)
 {
-	if (n == 1 || n == 0)
-		return (n);
-	if (i * i == n || n < 0)
+	if (n < 0)
 		return (-1);
-	if (i == n / i)
-	{
+	if ((i * i) > n)
+		return (-1);
+	if (i * i == n)
 		return (i);
-	}
-	return (_square_root(n, i + 1));
+	return (_sqrt(n, i + 1));
 }
