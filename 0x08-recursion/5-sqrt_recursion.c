@@ -9,12 +9,12 @@ int _sqrt_recursion(int n)
 	return (_square_root(n, 1));
 }
 /**
- * _square_root - a helping function that have the recursive provalbilty
+ * _sqrt - a helping function that have the recursive provalbilty
  * @n: the input intger
  * @i: the intger we recusive with
  * Return: the square root of the number
  */
-int _square_root(int n, int i)
+int _sqrt(int n, int i)
 {
 	if (n < 0)
 		return (-1);
