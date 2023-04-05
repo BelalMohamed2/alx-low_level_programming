@@ -6,7 +6,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return (_square_root(n, 1));
+	return (_sqrt(n, 1));
 }
 /**
  * _sqrt - a helping function that have the recursive provalbilty
