@@ -9,7 +9,7 @@ int _strlen(char *s)
 	if (*s == '\0')
 		return (0);
 
-	return (1 + strlen(s + 1));
+	return (1 + _strlen(s + 1));
 }
 /**
  * testing - function to test string if it palindrome
@@ -36,7 +36,7 @@ int is_palindrome(char *s)
 	int i, n;
 
 	n = 0;
-	i = strlen(s);
+	i = _strlen(s);
 
 	return (testing(s, n, i));
 }
