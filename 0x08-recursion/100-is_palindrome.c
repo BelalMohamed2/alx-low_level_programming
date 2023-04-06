@@ -26,7 +26,7 @@ int testing(char *s, int n, int i)
 		return (1);
 	else if ((i % 2 == 0) || ((n + 1) == i))
 		return (1);
-	testing(s, n + 1, i - 1);
+	return (testing(s, n + 1, i - 1));
 }
 /**
  * is_palindrome - is the word that prounounced the same way
