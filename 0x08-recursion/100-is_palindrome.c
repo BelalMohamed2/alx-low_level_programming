@@ -22,8 +22,10 @@ int testing(char *s, int n, int i)
 {
 	if (s[n] != s[i])
 		return (0);
-	else if (n == i)
+	else if ((i % 2 != 0) || (n == i))
 		return (1);
+	else if ((i % 2 == 0) || ((n + 1) == i)
+			return (1);
 	testing(s, n + 1, i - 1);
 }
 /**
