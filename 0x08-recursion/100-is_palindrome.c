@@ -24,8 +24,8 @@ int testing(char *s, int n, int i)
 		return (0);
 	else if ((i % 2 != 0) || (n == i))
 		return (1);
-	else if ((i % 2 == 0) || ((n + 1) == i)
-			return (1);
+	else if ((i % 2 == 0) || ((n + 1) == i))
+		return (1);
 	testing(s, n + 1, i - 1);
 }
 /**
