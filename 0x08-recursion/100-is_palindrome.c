@@ -22,9 +22,9 @@ int testing(char *s, int n, int i)
 {
 	if (s[n] != s[i])
 		return (0);
-	if ((i % 2 != 0) || (n == i))
+	if ((i % 2 != 0) && (n == i))
 		return (1);
-	if ((i % 2 == 0) || ((n + 1) == i))
+	if ((i % 2 == 0) && ((n + 1) == i))
 		return (1);
 	return (0 + testing(s, n + 1, i - 1));
 }
@@ -40,5 +40,5 @@ int is_palindrome(char *s)
 	n = 0;
 	i = _strlen(s);
 
-	return (testing(s, n, i));
+	return (testing(s, n, i - 1));
 }
