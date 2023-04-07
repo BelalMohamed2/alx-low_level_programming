@@ -1,30 +1,27 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * _strpbrk - function locates the first occurance of the string s in accept
- * @s: a pointer in the array to search for
- * @accept: a pointer for the array to search in
- * Return: returning a pointer to the matching string if there is a match
+ * _strpbrk - bytes
+ * @s: pointer to char
+ * @accept: pointer to char
+ * Return: NULL
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-	char *location;
-	int i, j;
+	int i;
 
-	for (i = 0; accept[i] != '\0'; i++)
+	while (*s)
 	{
-		if accept[i] == s[0]
+		for (i = 0; accept[i]; i++)
 		{
-			location = accept + i;
-			for (j = 0; s[j] != '\0'; j++)
+			if (*s == accept[i])
 			{
-				if s[j] != accept[i + j]
-				{
-					return (NULL);
-				}
+				return (s);
 			}
-			return (location);
 		}
+		s++;
 	}
 	return (NULL);
 }
