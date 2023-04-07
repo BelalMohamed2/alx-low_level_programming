@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strpbrk - function locates the first occurance of the string s in accept
  * @s: a pointer in the array to search for
@@ -19,11 +20,11 @@ char *_strpbrk(char *s, char *accept)
 			{
 				if s[j] != accept[i + j]
 				{
-					return (0);
+					return (NULL);
 				}
 			}
 			return (location);
 		}
 	}
-	return (0);
+	return (NULL);
 }
