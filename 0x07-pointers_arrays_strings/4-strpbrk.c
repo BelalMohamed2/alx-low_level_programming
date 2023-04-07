@@ -8,23 +8,17 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-        char *location;
         int i, j;
 
         for (i = 0; s[i] != '\0'; i++)
         {
-                if s[i] == accept[0]
-                {
-                        location = s + i;
                         for (j = 0; accept[j] != '\0'; j++)
                         {
-                                if accept[j] != s[i + j]
+                                if accept[j] == s[i + j]
                                 {
-                                        return (NULL);
+                                        return (s);
                                 }
                         }
-                        return (location);
-                }
         }
         return (NULL);
 }
