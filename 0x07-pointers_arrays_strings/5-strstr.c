@@ -14,7 +14,7 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		if (needle[i] == haystack[0])
+		if (haystack[i] == needle[0])
 		{
 			location = haystack + i;
 			for (j = 0; needle[j] != '\0'; j++)
