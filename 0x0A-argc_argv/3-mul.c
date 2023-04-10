@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	{
 		f_num = atoi(argv[1]);
 		s_num = atoi(argv[2]);
-		printf("%d", f_num * s_num);
+		printf("%d\n", f_num * s_num);
 		return (0);
 	}
-	printf("Error");
+	printf("Error\n");
 	return (1);
 }
