@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int f_num, s_num;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
 		f_num = atoi(argv[1]);
 		s_num = atoi(argv[2]);
