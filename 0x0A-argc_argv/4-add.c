@@ -8,14 +8,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i = 0, var;
+	int sum = 0, i = 1, var;
 
 	if (argc > 1)
 	{
 		for (; i < argc; i++)
 		{
 			var = atoi(argv[i]);
-			if (var >= '0' && var <= '9')
+			if ((var + 48)  >= '0' && (var + 48) <= '9')
 			{
 				sum += var;
 			}
