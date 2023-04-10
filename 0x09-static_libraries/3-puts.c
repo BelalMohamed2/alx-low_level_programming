@@ -1,20 +1,18 @@
 #include "main.h"
+
 /**
- * _puts - function that prints the string
- * @str: a character pointer that points to the first location of the array
- * Return: no returned values
+ * _puts - prints a string, followed by a new line,
+ * @str: pointer to the string to print
+ * Return: void
  */
+
 void _puts(char *str)
 {
 	int i = 0;
 
-	while (1)
+	while (str[i])
 	{
-		if (*(str + i) == '\0')
-		{
-			break;
-		}
-		_putchar(*(str + i));
+		_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
