@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	{
 		for (; i < argc; i++)
 		{
-			if (argv[i] >= '0' && argv[i] <= '9')
+			var = atoi(argv[i]);
+			if (var >= '0' && var <= '9')
 			{
-				var = atoi(argv[i]);
 				sum += var;
 			}
 			else
