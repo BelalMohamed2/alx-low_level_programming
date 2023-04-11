@@ -24,7 +24,7 @@ int get_len(char *strptr)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size = 0, i = 0;
+	int size = 0, i, j;
 	int len1 = 0, len2 = 0;
 	char *ptr;
 
@@ -38,14 +38,10 @@ char *str_concat(char *s1, char *s2)
 	ptr = malloc((size * sizeof(char)) + 1);
 	if (!ptr)
 		return (NULL);
-	for (; i < len1; i++)
-	{
+	for (i = 0; i < len1; i++)
 		ptr[i] = s1[i];
-	}
-	for (; i < (len1 + len2); i++)
-	{
-		ptr[i] = s2[i - len1];
-	}
+	for (j = 0; i < size && j < len2; i++, j++)
+		ptr[i] = s2[j];
 	ptr[i] = '\0';
 	return (ptr);
 }
