@@ -1,21 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * get_len - function to get the length of the string
- * @strptr: the input string
- * Return: the length of the string
- */
-int get_len(char *strptr)
-{
-	int size;
-
-	while (strptr[size] != '\0')
-	{
-		size++;
-	}
-	return (size);
-}
-/**
  * str_concat -  function returns a pointer to a
  * newly allocated space in memory
  * @s1: a pointer to a string
@@ -24,24 +9,29 @@ int get_len(char *strptr)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size = 0, i, j;
-	int len1 = 0, len2 = 0;
-	char *ptr;
+	char *concat;
+	int s1_len = 0, s2_len = 0;
+	int i, j, size;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	len1 = get_len(s1);
-	len2 = get_len(s2);
-	size = len1 + len2;
-	ptr = malloc((size + 1) * sizeof(char));
-	if (ptr == NULL)
+
+	while (s1[s1_len] != '\0')
+		s1_len++;
+	while (s2[s2_len] != '\0')
+		s2_len++;
+
+	size = s1_len + s2_len;
+	concat = malloc(sizeof(char) * (size + 1));
+	if (concat == NULL)
 		return (NULL);
-	for (i = 0; i < len1; i++)
-		ptr[i] = s1[i];
-	for (j = 0; i < size && j < len2; i++, j++)
-		ptr[i] = s2[j];
-	ptr[i] = '\0';
-	return (ptr);
+	for (i = 0; i < s1_len; i++)
+		concat[i] = s1[i];
+	for (j = 0; i < size && j < s2_len; i++, j++)
+		concat[i] = s2[j];
+	concat[i] = '\0';
+
+	return (concat);
 }
