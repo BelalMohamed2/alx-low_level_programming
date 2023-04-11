@@ -3,7 +3,7 @@
 /**
  * _strdup - function returns a pointer to a newly allocated space in memory
  * @str: a pointer to a string
- * Retrun: NULL if str = NULL or returns a pointer to the duplicated string
+ * Return: NULL if str = NULL or returns a pointer to the duplicated string
  */
 char *_strdup(char *str)
 {
