@@ -16,7 +16,8 @@ int get_len(char *strptr)
 	return (size);
 }
 /**
- * str_concat -  function returns a pointer to a newly allocated space in memory
+ * str_concat -  function returns a pointer to a
+ * newly allocated space in memory
  * @s1: a pointer to a string
  * @s2: a pointer to a string
  * Return: NULL if str = NULL or returns a pointer to the duplicated string
