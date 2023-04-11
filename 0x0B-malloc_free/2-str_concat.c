@@ -17,7 +17,8 @@ int get_len(char *strptr)
 }
 /**
  * _strdup - function returns a pointer to a newly allocated space in memory
- * @str: a pointer to a string
+ * @s1: a pointer to a string
+ * @s2: a pointer to a string
  * Return: NULL if str = NULL or returns a pointer to the duplicated string
  */
 char *str_concat(char *s1, char *s2)
@@ -47,4 +48,3 @@ char *str_concat(char *s1, char *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
