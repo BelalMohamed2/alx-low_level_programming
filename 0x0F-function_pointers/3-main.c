@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((operator == '/' || operator == '%') && operator == '0')
+	if ((operator == '/' || operator == '%') && argv[3] == '0')
 	{
 		printf("Error\n");
 		exit(100);
