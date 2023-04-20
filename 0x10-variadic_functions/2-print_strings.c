@@ -28,7 +28,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (flag != 1)
 			printf("%s", separator);
 		else
-			printf(" ");
+			printf("");
 	}
 	temp = va_arg(strings, char*);
 	if (temp != NULL)
