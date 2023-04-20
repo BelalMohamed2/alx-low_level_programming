@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * main - function that performs simple operations.
  * @argc: the argument count
@@ -21,7 +19,6 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = *argv[2];
 	fun = get_op_func(argv[2]);
 
 	if (!fun)
@@ -29,8 +26,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+	operator = *argv[2];
 
-	if ((operator == '/' || operator == '%') && argv[3] == 0)
+	if ((operator == '/' || operator == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
