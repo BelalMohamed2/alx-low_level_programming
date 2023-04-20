@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (temp != NULL)
 			printf("%s", temp);
 		else
-			printf("nil");
+			printf("(nil)");
 		if (flag != 1)
 			printf("%s ", separator);
 		else
@@ -34,5 +34,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (temp != NULL)
 		printf("%s\n", temp);
 	else
-		printf("nil\n");
+		printf("(nil)\n");
 }
