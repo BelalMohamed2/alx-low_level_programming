@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * binary_to_uint - function that converts a binary number to an unsigned in
  * @b: a pointer to the input string
